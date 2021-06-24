@@ -23,7 +23,7 @@
 <div class="content mt-3">
 
   <div class="col-xl-12 col-lg-12">
-    <div class="col-xs-6 col-sm-6">
+    <div class="col-lg-6 col-md-6">
       <div class="card">
         <div class="card-header">
           <strong>Update My Profile</strong>
