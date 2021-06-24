@@ -72,7 +72,7 @@
               <label class=" form-control-label">Profile Picture</label>
               <div class="input-group">
                 <div class="input-group-addon"><i class="fa fa-image"></i></div>
-                <input class="form-control" type="file">
+                <input class="form-control" type="file" name="avatar">
               </div>
               @error('avatar')
               <small class="form-text text-danger">{{ $message }}</small>
@@ -93,8 +93,6 @@
         <div class="card-body">
           <aside class="profile-nav alt">
             <section class="card">
-
-
               <div class="mx-auto d-block">
                 <img class="rounded-circle mx-auto d-block mt-2" src="{{Auth::user()->avatar != null ? asset('uploads/profile_pictures/'.Auth::user()->avatar) : asset('dashboard/images/avatar.png')}}" alt="{{ Auth::user()->username }}" class="img-fluid radius-round border">
                 <h5 class="text-sm-center mt-2 mb-1">{{ Auth::user()->name }}</h5>

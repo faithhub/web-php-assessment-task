@@ -30,7 +30,7 @@
         </div>
         <div class="card-body card-block">
           <form method="post" enctype="multipart/form-data" action="{{ route('doctor-profile') }}">
-          @csrf
+            @csrf
             <div class="form-group">
               <label class=" form-control-label">Username</label>
               <div class="input-group">
@@ -72,7 +72,7 @@
               <label class=" form-control-label">Profile Picture</label>
               <div class="input-group">
                 <div class="input-group-addon"><i class="fa fa-image"></i></div>
-                <input class="form-control" type="file">
+                <input class="form-control" type="file" name="avatar">
               </div>
               @error('avatar')
               <small class="form-text text-danger">{{ $message }}</small>
