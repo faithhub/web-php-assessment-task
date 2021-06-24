@@ -42,7 +42,7 @@ class ProfileController extends Controller
                 if ($request->file('avatar')) {
                     $file = $request->file('avatar');
                     $picture = 'STF' . date('dMY') . time() . '.' . $file->getClientOriginalExtension();
-                    $pictureDestination = 'uploads/admin_avatar';
+                    $pictureDestination = 'uploads/profile_pictures';
                     $file->move($pictureDestination, $picture);
                 }
                 $user = User::find(Auth::user()->id);
