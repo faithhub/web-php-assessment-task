@@ -94,7 +94,7 @@
           <aside class="profile-nav alt">
             <section class="card">
               <div class="mx-auto d-block">
-                <img class="rounded-circle mx-auto d-block mt-2" src="{{Auth::user()->avatar != null ? asset('uploads/profile_pictures/'.Auth::user()->avatar) : asset('dashboard/images/avatar.png')}}" alt="{{ Auth::user()->username }}" class="img-fluid radius-round border">
+                <img class="rounded-circle mx-auto d-block mt-2" src="{{Auth::user()->avatar != null ? asset('uploads/admin_avatar/'.Auth::user()->avatar) : asset('dashboard/images/avatar.png')}}" alt="{{ Auth::user()->username }}" class="img-fluid radius-round border">
                 <h5 class="text-sm-center mt-2 mb-1">{{ Auth::user()->name }}</h5>
                 <!-- <div class="location text-sm-center"><i class="fa fa-map-marker"></i> California, United States</div> -->
               </div>
