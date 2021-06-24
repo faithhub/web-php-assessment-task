@@ -36,7 +36,7 @@ class BranchController extends Controller
     {
         if ($_POST) {
             $rules = array(
-                'name'               => ['required', 'max:255', 'unique:users'],
+                'name'               => ['required', 'max:255', 'unique:branches'],
                 'amount_per_patient' => ['required'],
             );
             $fieldNames = array(
